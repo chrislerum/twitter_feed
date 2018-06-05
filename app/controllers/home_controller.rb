@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
+    # in real world, wouldn't put these key values in the repo, would use env vars on the deployment server
     client = Twitter::REST::Client.new do |config|
       config.consumer_key        = "AwMmcxdZu4blInJS3E8miaWsp"
       config.consumer_secret     = "yxYnLK1akSA7elP1vB1VTVA8b3L5MROQiemhKRvn605AX6OoS0"
