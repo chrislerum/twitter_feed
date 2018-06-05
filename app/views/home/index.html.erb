@@ -1,13 +1,22 @@
-<div class="container-full background">
-<div class="twitter-feed">
-  <% @tweets.each do |tweet| %>
-    <br>
-    <br>
-    <div class="tweet">
-    @<%= tweet.user.screen_name %>:
-    <br>
-    <%= tweet.full_text.gsub(URI.regexp, '<a href="\0">\0</a>').html_safe %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 title">
+      <%= image_tag 'swift.jpg', width: 300 %>
+      <h3>Tweets to Taylor Swift mentioning the word 'happy'</h3>
     </div>
-  <% end %>
-</div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <% @tweets.each do |tweet| %>
+        <div class="tweet">
+          <div class="tweet-name">
+            @<%= tweet.user.screen_name %>:
+          </div>
+          <div class="tweet-content">
+            <%= tweet.full_text.gsub(URI.regexp, '<a href="\0">\0</a>').html_safe %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>
