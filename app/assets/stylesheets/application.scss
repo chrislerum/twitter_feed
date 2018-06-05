@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+.tweet-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.tweet {
+  border: 1px solid #cccccc;
+  background: #efefef;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.title {
+  padding-top: 10px;
+  text-align: center;
+}
