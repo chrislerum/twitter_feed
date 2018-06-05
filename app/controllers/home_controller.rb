@@ -7,6 +7,6 @@ class HomeController < ApplicationController
       config.access_token_secret = "nxfC9SjAZoz1M3cmbmxlGtp5tEihKlrJND0XUKSm4KKOn"
     end
 
-    @tweets = client.home_timeline
+    @tweets = client.search("to:taylorswift13 happy", result_type: "recent").take(100)
   end
 end
