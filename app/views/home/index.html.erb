@@ -1,0 +1,13 @@
+<div class="container-full background">
+<div class="twitter-feed">
+  <% @tweets.each do |tweet| %>
+    <br>
+    <br>
+    <div class="tweet">
+    @<%= tweet.user.screen_name %>:
+    <br>
+    <%= tweet.full_text.gsub(URI.regexp, '<a href="\0">\0</a>').html_safe %>
+    </div>
+  <% end %>
+</div>
+</div>
