@@ -1,12 +1,14 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-12 title">
-      <%= image_tag 'swift.jpg', width: 300 %>
-      <h3>Tweets to Taylor Swift mentioning the word 'happy'</h3>
+    <div class="image">
+      <%= image_tag 'swift.jpg', class: 'swift' %>
+    </div>
+    <div class="title">
+      Tweets to Taylor Swift mentioning the word 'happy'
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12">
+    <div>
       <% @tweets.each do |tweet| %>
         <div class="tweet">
           <div class="tweet-name">

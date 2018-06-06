@@ -19,17 +19,56 @@ body {
   font-family: 'Titillium Web', sans-serif;
 }
 .tweet-name {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
+  text-align: center;
+}
+.tweet-content {
+  font-size: 18px;
 }
 .tweet {
   border: 1px solid #cccccc;
   background: #efefef;
   margin-bottom: 10px;
-  border-radius: 10px;
   padding: 5px;
 }
 .title {
   padding-top: 10px;
   text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.image {
+  text-align: center;
+  .swift {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .tweet-name {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+  }
+  .title {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .tweet {
+    border: 1px solid #cccccc;
+    background: pink;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .image {
+    float: left;
+    padding-bottom: 10px;
+    text-align: left;
+    .swift {
+      width: 300px;
+    }
+  }
 }
